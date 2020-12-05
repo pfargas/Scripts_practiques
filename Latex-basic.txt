@@ -1,0 +1,38 @@
+\documentclass[10pt,a4paper]{article} %El document que es crea serà tipus article amb tamany de paper a4 i mida de lletra 10pt
+
+%--------------------------------------Paquets--------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath} %Paquet quasi essencial per tenir més fucionalitat a l'hora d'escriure expressions matemàtiques
+\usepackage{natbib}
+\usepackage{graphicx} %Paquet essencial per importar imatges 
+\usepackage{commath}
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[catalan]{babel} %Si es vol posar el document en un altre idioma s'ha de substituir "catalan" per l'idioma que es vulgui. Si es vol en anglès es pot esborrar
+
+%--------------------------------------Comandes noves--------------------------------------
+
+\newcommand{\dparcial}[2]{\frac{\partial #1}{\partial #2}} %Es poden posar més comandes, aquesta només és un exemple i el que fa és quan tu poses al teu document \dparcial{y}{x} t'escriu l'expressió simbòlica de la derivada PARCIAL de y respecte de x (UTILIZAR DINS DE MATHMODE)
+
+%--------------------------------------Parametres inicials--------------------------------------
+
+\title{} %Titol del document. Pot tenir més d'una línia posant \\
+\author{} %Autor del document
+\date{} %Data
+
+%--------------------------------------Inici document--------------------------------------
+\begin{document} %Tot el que estigui entre \begin{document} i \end{document} serà el que surti al document
+
+\maketitle %Posa al principi del document la info posada a l'apartat -parametres inicials-
+\tableofcontents{} %Crea un índex automàtic. Si no es vol es pot esborrar
+
+
+\begin{abstract} %Crea un apartat que en catala es diu Resum. Si no es vol, eliminar des de \begin{abstract} fins a \end{abstract}
+%text
+\end{abstract}
+
+%text
+
+\end{document}
