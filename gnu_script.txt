@@ -1,0 +1,39 @@
+#########################################
+# Exemple script gnuplot amb fit lineal #
+#########################################
+#Primer de tot definim la teminal, en aquest cas postscript (.eps)
+#Si volem fer la font de tot el gràfic més gran aumentem el 30
+set term postscript eps enhanced solid color font 30
+#Títol del fitxer de sortida (imatge)
+set output "Exemple_Lab_mecanica.eps"
+#On posem la llegenda (left|right) (bottom|top) i el tamany de la llegenda que pot ser diferent al de la resta de la figura
+set key left top font ',20'
+#Títol de l'eix x
+set xlabel "Temps (s)" 
+#Títol de l'eix y
+set ylabel "Posicio (m)" 
+#Fitxer del qual llegirem les dades
+titol1='Exemple1.txt'
+#Definim el color que volem que tinguin els nostres punts
+col1='#000000'
+#Definim el color que volem que tingui la regressió lineal
+col2='#000000'
+#Definim la nostra funció
+f(x)=A*x+B
+#Fem l'ajust, després del via hem de posar els paràmetres de l'ajust, en aquest cas només tenim A el pendent i B el terme independent
+#En aquest cas, per tal de fer l'ajust tindrem en compte les barres d'error, és a dir, els punts estaran pesats segons el seu error
+#En cas de no voler pesar l'error posariem 1:3 via A,B
+fit f(x) titol1 using 1:3:2:4 xyerror via A,B
+#Ajustem rang eix x
+set xran [0:6]
+#Ajustem rang eix y
+set yran [0:30]
+# 1:2:3 corresponen a x:y::errorx:errory, el valor numéric de pointtype ens donara el tipus de punt(quadrat, cercle, triangle), el pointsize 
+# el tamany del punt i el linewidth el gruix de les línies ja siguin de barres d'error o de la regressió lineal en el cas de f(x),
+# També es pot afegir la llegenda escribint
+plot titol1 using 1:3:2:4 with xyerrorbars pointtype 6 pointsize 2 linewidth 1 lc rgb col1 title 'Llegenda punts', f(x) linewidth 2 lc rgb col2 title 'Llegenda regressio'
+
+
+
+
+
