@@ -1,0 +1,28 @@
+#########################################
+# Exemple script gnuplot amb fit lineal #
+#########################################
+#Primer de tot definim la teminal, en aquest cas postscript (.eps)
+#Si volem fer la font de tot el gràfic més gran aumentem el 30
+set term postscript eps enhanced solid color font 'Helvetica,25'
+#Títol del fitxer de sortida (imatge)
+set output "Pulsant_80.eps"
+#On posem la llegenda (left|right) (bottom|top) i el tamany de la llegenda que pot ser diferent al de la resta de la figura
+set key left top font ',20'
+#Títol de l'eix x
+set xlabel "Temps (s)"
+#Títol de l'eix y
+set ylabel "Amplitud (u.a.)"
+#Marquem 2ns eixos
+set mxtics 2
+set mytics 2
+#Fitxer del qual llegirem les dades
+titol1='Puls_80.txt'
+#Definim el color que volem que tinguin els nostres punts
+col1='#000000'
+col2='#ff0000'
+#Definim els eixos
+set xra [0:*]
+set yra [-1.3:1.3]
+#creem el gràfic
+plot titol1 using 1:2 with lp lt 6 lc rgb col1 title 'Pendol 1','' using 1:3 with lp lc rgb col2 title 'Pendol 2'
+set output
