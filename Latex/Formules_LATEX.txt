@@ -1,3 +1,4 @@
+%Autor: Narcís
 %####CÀLCUL REGRESIÓ MÍNIMS QUADRATS####
 %"Notació:	m_i pendent recta	"
 %"		n_i ordenada a l'origen	"
