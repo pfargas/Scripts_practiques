@@ -1,0 +1,69 @@
+%####CÀLCUL REGRESIÓ MÍNIMS QUADRATS####
+%"Notació:	m_i pendent recta	"
+%"		n_i ordenada a l'origen	"
+
+
+\begin{equation}
+    m_i = \frac{\Delta xy}{\Delta xx}
+\end{equation}
+
+L'ordenada a l'origen l'hem calculat segons:
+\begin{equation}
+  n_i = \Bar{y}-m_{A}\cdot \Bar{x}
+\end{equation}
+
+El coeficient de correlació:
+\begin{equation}
+  R^2=\frac{\left(\Delta{xy}^2\right)}{\Delta{xx}\cdot \Delta{yy}}
+\end{equation}
+
+La incertesa associada a la $m_i$, es calcula segons:
+\begin{equation}
+  \delta m_i = \delta y_{reg} \sqrt{\frac{1}{N\cdot \Delta xx}}
+\end{equation}
+
+i la de la $n_i$:
+\begin{equation}
+  \delta n_i = \delta y_{reg} \sqrt{\frac{\Bar{x^2}}{N \cdot \Delta xx}}
+\end{equation}
+
+On $\delta y_{reg} = \sqrt{\frac{\Delta yy \left(1-R^2\right)N}{N-2}}$ i $\Delta xx = \Bar{x^2}-\Bar{x}^2; \Delta yy = \Bar{y^2}-\Bar{y}^2; \Delta xy = \Bar{xy}-\Bar{x}\cdot\Bar{y}$
+
+
+
+
+
+
+%####CÀLCUL MITJANES I ERROR ESTADÍSTIC####
+%"Notació:	X Variable de la que es vol fer l'estudi			"
+%"		N # de valors que s'han considerat per a fer l'estadística	"
+%"		M Unitats de  la variable X					"
+
+
+
+Fent la mitjana dels valors considerats trobem que:
+\begin{center}
+   \begin{equation}
+        \label{periode}
+        X=\langle X\rangle=\frac{\sum_{i=1}^{N}X}{N} \; M
+    \end{equation}
+\end{center}
+\begin{center}
+    \begin{equation}
+        \delta X=\delta\langle X\rangle=\sqrt{(\delta X_{exp})^2+(\delta X_{estad})^2}\;\frac{cm}{s}
+    \end{equation}
+\end{center}
+On $\delta X_{exp}\hspace{1mm} M $ és l'error obtingut en mesurar X i $\delta X_{estad}$ el calcularem usant eines estadístiques:\\
+
+\begin{equation}
+\delta X_{est}=\frac{\sigma_{X}}{\sqrt{N}}\; M \hspace{0.5cm}
+        \textbf{N=nombre de X}
+\end{equation}
+
+On $\sigma_{X}$ és la desviació estàndard, que es calcula de la següent manera:
+\begin{equation}
+    \sigma_{X}=\sqrt{\frac{1}{N}\sum_{i=1}^{N}{(X-\langle X\rangle)^2}}=\sqrt{\langle{X}^2\rangle-{\langle X\rangle}^2}\; M
+\end{equation}
+Finalment, substituïnt valors numèrics obtenim que:
+\begin{equation}
+    X =(   \pm   ) \;  M
