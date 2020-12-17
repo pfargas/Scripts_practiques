@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-gnuplot-5/versions/0.4.2/tarball",
+  "_id": "language-gnuplot-5@0.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-bxk/iAW1kZUztyyqJ4qTJcps8aCUfEU2ygoTdu+v+B9MvY4gritaRJW+XcadokpfRhe+03z5RXl6LGtIFlOTpQ==",
+  "_location": "/language-gnuplot-5",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-gnuplot-5/versions/0.4.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-gnuplot-5/versions/0.4.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-gnuplot-5/versions/0.4.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-gnuplot-5/versions/0.4.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-gnuplot-5/versions/0.4.2/tarball",
+  "_shasum": "563a3f46858fca8484d162c19c12aa3b86a0f126",
+  "_spec": "https://www.atom.io/api/packages/language-gnuplot-5/versions/0.4.2/tarball",
+  "_where": "C:\\Users\\pfarg\\AppData\\Local\\Temp\\apm-install-dir-20201115-4184-1da8x0a.xqqg",
+  "bugs": {
+    "url": "https://github.com/simon123h/language-gnuplot-atom/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Syntax highlighting for Gnuplot 5 in Atom",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/simon123h/language-gnuplot-atom#readme",
+  "lincense": "MIT",
+  "name": "language-gnuplot-5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simon123h/language-gnuplot-atom.git"
+  },
+  "version": "0.4.2"
+}
